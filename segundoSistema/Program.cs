@@ -25,6 +25,26 @@ namespace segundoSistema
             int z = 5;
             Console.WriteLine(!(z > 3 && z < 10)); //inverte a resposta
 
+            //Classe Math
+
+            Console.WriteLine(Math.Max(40, 200)); //retorna o maior valor
+            Console.WriteLine(Math.Min(40, 200)); //retorna o menor valor
+            Console.WriteLine(Math.Sqrt(144)); // retorna a raíz quadrada
+            Console.WriteLine(Math.Round(4.6)); //arredonda o valor
+
+            //Atividade - Classe Math
+            //Maior e menor entre 3 números
+
+            Console.WriteLine("\n======= Atividade 1 ========");
+            Console.WriteLine("Digite o 1º número");
+            int primeiroNumero = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Digite o 2º número");
+            int segundoNumero = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Digite o 3º número");
+            int terceiroNumero = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"O maior número digitado foi: {Math.Max(terceiroNumero, Math.Max(primeiroNumero, segundoNumero))}");
+            Console.WriteLine($"O menor número digitado foi: {Math.Min(terceiroNumero, Math.Min(primeiroNumero, segundoNumero))}");
         }
     }
 }
